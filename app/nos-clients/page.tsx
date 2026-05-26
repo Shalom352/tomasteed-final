@@ -106,10 +106,10 @@ export default function NosClientsPage() {
       <section style={{ background: "#F5F5F5", padding: "60px 0", overflow: "hidden" }}>
         <div className="container">
           <h2 style={{ fontSize: "1.3rem", fontWeight: 700, marginBottom: "8px" }} className="line-orange">
-            Ils nous ont fait confiance
+            Ils nous ont fait confiance <span style={{ fontSize: "0.7rem", fontWeight: 700, color: "#DC4920", background: "rgba(220,73,32,0.1)", padding: "3px 10px", borderRadius: "12px", marginLeft: "10px", verticalAlign: "middle", letterSpacing: "0.5px" }}>EXEMPLE</span>
           </h2>
           <p style={{ color: "#666", marginBottom: "40px", fontSize: "0.9rem" }}>
-            Nous avons l&apos;honneur d&apos;accompagner une large portefeuille de partenaires institutionnels, financiers et privés qui nous témoignent leur confiance au quotidien.
+            Sélection de références illustratives et exemples de mandats ou transactions exécutés par les associés au cours de leur carrière.
           </p>
         </div>
         <div className="logo-marquee-container">

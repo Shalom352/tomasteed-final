@@ -229,9 +229,11 @@ export default function HomePage() {
       {/* Ils nous font confiance */}
       <section style={{ background: "#F5F5F5", padding: "60px 0", overflow: "hidden" }}>
         <div className="container">
-          <h2 style={{ fontSize: "1.5rem", fontWeight: 800, marginBottom: "8px" }}>Ils nous font confiance</h2>
+          <h2 style={{ fontSize: "1.5rem", fontWeight: 800, marginBottom: "8px" }}>
+            Ils nous font confiance <span style={{ fontSize: "0.72rem", fontWeight: 700, color: "#DC4920", background: "rgba(220,73,32,0.1)", padding: "3px 10px", borderRadius: "12px", marginLeft: "10px", verticalAlign: "middle", letterSpacing: "0.5px" }}>EXEMPLE</span>
+          </h2>
           <p style={{ color: "#666", marginBottom: "36px", fontSize: "0.9rem" }}>
-            Nous avons l&apos;honneur d&apos;accompagner une large portefeuille de partenaires institutionnels, financiers et privés qui nous témoignent leur confiance au quotidien.
+            Sélection de références illustratives et exemples de mandats ou transactions exécutés par les associés au cours de leur carrière.
           </p>
         </div>
         <div className="logo-marquee-container">
