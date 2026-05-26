@@ -91,8 +91,8 @@ export default function NosClientsPage() {
                 src={
                   activeType === "etats" ? "/images/clients-etats.webp" :
                   activeType === "agences" ? "/images/clients-agences.avif" :
-                  activeType === "institutions" ? "/images/clients-institutions.avif" :
-                  "/images/clients-sponsors.avif"
+                  activeType === "institutions" ? "/images/expertise-fusions.png" :
+                  "/images/expertise-levee.png"
                 }
                 alt={current.label}
                 style={{
@@ -101,7 +101,7 @@ export default function NosClientsPage() {
                   objectFit: "cover",
                   borderRadius: "8px",
                   display: "block",
-                  filter: (activeType === "etats" || activeType === "sponsors") ? "blur(4px) brightness(0.9)" : "none",
+                  filter: (activeType === "institutions" || activeType === "sponsors") ? "blur(4px) brightness(0.9)" : "none",
                   transition: "filter 0.3s ease",
                 }}
               />
