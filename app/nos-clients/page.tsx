@@ -91,8 +91,8 @@ export default function NosClientsPage() {
                 src={
                   activeType === "etats" ? "/images/clients-etats.webp" :
                   activeType === "agences" ? "/images/clients-agences.avif" :
-                  activeType === "institutions" ? "/images/expertise-fusions.png" :
-                  "/images/expertise-levee.png"
+                  activeType === "institutions" ? "/images/clients-institutions-ent.png" :
+                  "/images/clients-sponsors-projet.png"
                 }
                 alt={current.label}
                 style={{
