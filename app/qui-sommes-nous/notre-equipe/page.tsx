@@ -45,14 +45,22 @@ export default function NotreEquipePage() {
 
       {/* Hero avec fond photo */}
       <section style={{
-        backgroundImage: "url('/images/equipe-hero.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
         padding: "80px 0",
         position: "relative",
+        overflow: "hidden",
       }}>
-        <div style={{ position: "absolute", inset: 0, background: "rgba(46,45,44,0.65)" }} />
-        <div className="container" style={{ position: "relative" }}>
+        {/* Blurred background layer */}
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          backgroundImage: "url('/images/equipe-hero.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "blur(8px) brightness(0.55)",
+          transform: "scale(1.05)",
+          zIndex: 0,
+        }} />
+        <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <h1 style={{ fontSize: "2.5rem", fontWeight: 800, color: "white", margin: 0 }}>Notre équipe</h1>
         </div>
       </section>

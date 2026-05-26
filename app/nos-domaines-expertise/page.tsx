@@ -56,14 +56,22 @@ export default function NosDomainesExpertisePage() {
     <div>
       {/* Hero avec fond photo */}
       <section style={{
-        backgroundImage: "url('/images/expertise-conseil.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
         padding: "80px 0",
         position: "relative",
+        overflow: "hidden",
       }}>
-        <div style={{ position: "absolute", inset: 0, background: "rgba(46,45,44,0.65)" }} />
-        <div className="container" style={{ position: "relative" }}>
+        {/* Blurred background layer */}
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          backgroundImage: "url('/images/expertise-conseil.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "blur(8px) brightness(0.55)",
+          transform: "scale(1.05)",
+          zIndex: 0,
+        }} />
+        <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <h1 style={{ fontSize: "2.5rem", fontWeight: 800, color: "white", margin: 0 }}>Nos domaines d&apos;expertise</h1>
         </div>
       </section>
@@ -125,7 +133,7 @@ export default function NosDomainesExpertisePage() {
                   "/images/expertise-levee.png"
                 }
                 alt={current.label}
-                style={{ width: "100%", height: "320px", objectFit: "cover", borderRadius: "8px", display: "block", boxShadow: "0 4px 20px rgba(0,0,0,0.15)" }}
+                style={{ width: "100%", height: "320px", objectFit: "cover", borderRadius: "8px", display: "block", filter: "blur(2px) brightness(0.95)", boxShadow: "0 4px 20px rgba(0,0,0,0.12)", transition: "all 0.4s ease" }}
               />
             </div>
           </div>

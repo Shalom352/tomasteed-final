@@ -208,3 +208,31 @@ p {
   font-family: var(--font-logo), 'Hiragino Kaku Gothic Pro', 'Hiragino Sans', 'Yu Gothic', Arial, sans-serif;
 }
 .logo-text::after { content: "."; color: var(--brand-dark); }
+
+/* Infinite Logo Marquee */
+@keyframes marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.logo-marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.logo-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 24px;
+  animation: marquee 25s linear infinite;
+  will-change: transform;
+}
+
+.logo-marquee-track:hover {
+  animation-play-state: paused;
+}
+

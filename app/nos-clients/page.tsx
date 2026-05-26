@@ -32,14 +32,22 @@ export default function NosClientsPage() {
     <div>
       {/* Hero avec fond photo */}
       <section style={{
-        backgroundImage: "url('/images/logos-clients-grid.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
         padding: "80px 0",
         position: "relative",
+        overflow: "hidden",
       }}>
-        <div style={{ position: "absolute", inset: 0, background: "rgba(46,45,44,0.65)" }} />
-        <div className="container" style={{ position: "relative" }}>
+        {/* Blurred background layer */}
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          backgroundImage: "url('/images/logos-clients-grid.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "blur(8px) brightness(0.55)",
+          transform: "scale(1.05)",
+          zIndex: 0,
+        }} />
+        <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <h1 style={{ fontSize: "2.5rem", fontWeight: 800, color: "white", margin: 0 }}>Nos clients</h1>
         </div>
       </section>
@@ -95,7 +103,7 @@ export default function NosClientsPage() {
       </section>
 
       {/* Ils nous ont fait confiance */}
-      <section style={{ background: "#F5F5F5", padding: "60px 0" }}>
+      <section style={{ background: "#F5F5F5", padding: "60px 0", overflow: "hidden" }}>
         <div className="container">
           <h2 style={{ fontSize: "1.3rem", fontWeight: 700, marginBottom: "8px" }} className="line-orange">
             Ils nous ont fait confiance
@@ -103,8 +111,12 @@ export default function NosClientsPage() {
           <p style={{ color: "#666", marginBottom: "40px", fontSize: "0.9rem" }}>
             Nous avons l&apos;honneur d&apos;accompagner une large portefeuille de partenaires institutionnels, financiers et privés qui nous témoignent leur confiance au quotidien.
           </p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))", gap: "16px", alignItems: "center" }}>
+        </div>
+        <div className="logo-marquee-container">
+          <div className="logo-marquee-track">
             {[
+              "BOAD", "Oryx Energies", "Cargill", "Orange CI", "ATIDI",
+              "BADEA", "NASLI", "Porteo Group", "YÉRÉ Group", "Agri Green",
               "BOAD", "Oryx Energies", "Cargill", "Orange CI", "ATIDI",
               "BADEA", "NASLI", "Porteo Group", "YÉRÉ Group", "Agri Green"
             ].map((name, i) => {
@@ -122,8 +134,8 @@ export default function NosClientsPage() {
               };
               const fileName = fileMap[name] || "boad.svg";
               return (
-                <div key={i} style={{ height: "60px", background: "white", borderRadius: "6px", border: "1px solid #E5E5E5", display: "flex", alignItems: "center", justifyContent: "center", padding: "10px", transition: "all 0.3s ease", boxShadow: "0 2px 4px rgba(0,0,0,0.02)" }}>
-                  <img src={`/images/logos/${fileName}`} alt={name} style={{ maxHeight: "100%", maxWidth: "100%", objectFit: "contain", filter: "grayscale(100%) opacity(0.8)", transition: "all 0.3s ease" }} />
+                <div key={i} style={{ width: "165px", height: "64px", background: "white", borderRadius: "6px", border: "1px solid #E5E5E5", display: "flex", alignItems: "center", justifyContent: "center", padding: "12px", flexShrink: 0, boxShadow: "0 2px 4px rgba(0,0,0,0.02)" }}>
+                  <img src={`/images/logos/${fileName}`} alt={name} style={{ maxHeight: "100%", maxWidth: "100%", objectFit: "contain", filter: "grayscale(100%) opacity(0.8)" }} />
                 </div>
               );
             })}
