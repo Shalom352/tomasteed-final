@@ -95,7 +95,15 @@ export default function NosClientsPage() {
                   "/images/clients-sponsors.avif"
                 }
                 alt={current.label}
-                style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "8px", display: "block" }}
+                style={{
+                  width: "100%",
+                  height: "260px",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                  display: "block",
+                  filter: (activeType === "etats" || activeType === "sponsors") ? "blur(4px) brightness(0.9)" : "none",
+                  transition: "filter 0.3s ease",
+                }}
               />
             </div>
           </div>
