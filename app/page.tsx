@@ -184,10 +184,16 @@ export default function HomePage() {
             Notre couverture sectorielle reflète la diversité des besoins de financement en Afrique et la profondeur de l&apos;expertise de nos équipes.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px", marginBottom: "32px" }}>
-            {sectors.map((s, i) => (
+            {sectors.map((s, i) => {
+              const sectorImg: Record<string, string> = {
+                "Eau & Assainissement": "/images/accueil-eau.avif",
+                "Santé": "/images/accueil-sante.jpg",
+                "Agro-Industrie & Agroalimentaire": "/images/accueil-agro.avif",
+              };
+              return (
               <div key={i} className="sector-card" style={{ background: "#F9F9F9" }}>
-                {s.title === "Santé" ? (
-                  <img src="/images/accueil-sante.jpg" alt="Santé" style={{ width: "100%", height: "150px", objectFit: "cover", display: "block" }} />
+                {sectorImg[s.title] ? (
+                  <img src={sectorImg[s.title]} alt={s.title} style={{ width: "100%", height: "150px", objectFit: "cover", display: "block" }} />
                 ) : (
                   <div style={{ height: "150px", background: "#E0E0E0" }} />
                 )}
@@ -196,7 +202,8 @@ export default function HomePage() {
                   <p style={{ color: "#666", fontSize: "0.8rem", lineHeight: 1.5, margin: 0 }}>{s.desc}</p>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
           <div style={{ textAlign: "center" }}>
             <Link href="/nos-secteurs-intervention" className="btn-orange">Voir tous les secteurs</Link>

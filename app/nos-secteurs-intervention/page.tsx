@@ -11,7 +11,14 @@ const sectors = [
 ];
 
 const sectorImages: Record<string, string> = {
+  "Agro-Industrie & Agroalimentaire": "/images/secteurs-agro.avif",
   "Santé": "/images/secteurs-sante.jpg",
+  "Mines & Industries extractives": "/images/secteurs-mines.avif",
+  "Hôtellerie, Distribution & Immobilier": "/images/secteurs-immobilier.avif",
+  "Infrastructures & Construction": "/images/secteurs-infrastructures.avif",
+  "Industrie Manufacturière": "/images/secteurs-industrie.avif",
+  "Eau & Assainissement": "/images/secteurs-eau.avif",
+  "Énergie Renouvelable": "/images/secteurs-energie.avif",
 };
 
 export default function NosSecteurPage() {

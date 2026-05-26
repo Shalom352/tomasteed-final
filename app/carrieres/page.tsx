@@ -62,14 +62,38 @@ export default function CarrieresPage() {
         </div>
       </section>
 
-      {/* Engagement ESG + Postuler */}
+      {/* Engagement ESG */}
       <section style={{ padding: "60px 0", background: "white" }}>
         <div className="container">
           <h2 style={{ fontSize: "1.3rem", fontWeight: 700, marginBottom: "32px" }} className="line-orange">
             Engagement ESG
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "48px", alignItems: "center" }}>
+            <div>
+              <p style={{ color: "#555", lineHeight: 1.7, fontSize: "0.9rem", marginBottom: "16px" }}>
+                Chez Tomasteed, l&apos;engagement ESG est intégré dès la conception de chaque solution de financement. Nous contribuons à une finance responsable en alignant performance financière et impact positif sur le continent africain.
+              </p>
+              <p style={{ color: "#555", lineHeight: 1.7, fontSize: "0.9rem" }}>
+                Nos collaborateurs participent activement à des transactions à fort impact — transition énergétique, accès à l&apos;eau, développement agricole — dans un environnement qui valorise la contribution individuelle.
+              </p>
+            </div>
+            <div>
+              <img
+                src="/images/carrieres-esg.avif"
+                alt="Engagement ESG"
+                style={{ width: "100%", height: "280px", objectFit: "cover", borderRadius: "8px", display: "block" }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Postuler */}
+      <section style={{ padding: "48px 0 60px", background: "#F5F5F5" }}>
+        <div className="container">
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "48px", alignItems: "center" }}>
             <div style={{ background: "#1C1C2E", color: "white", padding: "36px", borderRadius: "8px" }}>
+              <h2 style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "20px", color: "white" }}>Postuler</h2>
               <p style={{ lineHeight: 1.7, fontSize: "0.95rem", marginBottom: "20px" }}>
                 Pour postuler, envoyez votre CV et une lettre de motivation à{" "}
                 <a href="mailto:careers@tomasteed.com" style={{ color: "#E8552E", fontWeight: 600 }}>

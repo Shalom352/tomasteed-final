@@ -10,10 +10,10 @@ const distinctions = [
 ];
 
 const offices = [
-  { city: "Abu Dhabi", country: "UAE", flag: "🇦🇪", role: "Siège social & Régulation FSRA" },
-  { city: "Abidjan", country: "CIV", flag: "🇨🇮", role: "Couverture Afrique de l'Ouest" },
-  { city: "Paris", country: "FRA", flag: "🇫🇷", role: "Couverture Europe" },
-  { city: "Dubai", country: "UAE", flag: "🇦🇪", role: "Couverture Moyen-Orient" },
+  { city: "Abu Dhabi", country: "UAE", flag: "🇦🇪", role: "Siège social & Régulation FSRA", img: "/images/identite-uae.avif" },
+  { city: "Abidjan", country: "CIV", flag: "🇨🇮", role: "Couverture Afrique de l'Ouest", img: "/images/identite-abidjan.jpg" },
+  { city: "Dakar", country: "SEN", flag: "🇸🇳", role: "Couverture Afrique de l'Ouest", img: "/images/identite-dakar.jpg" },
+  { city: "Paris", country: "FRA", flag: "🇫🇷", role: "Couverture Europe", img: "/images/identite-paris.avif" },
 ];
 
 export default function NotreIdentitePage() {
@@ -45,15 +45,26 @@ export default function NotreIdentitePage() {
       {/* Content */}
       <section style={{ padding: "60px 0", background: "white" }}>
         <div className="container">
-          <p style={{ color: "#555", lineHeight: 1.8, fontSize: "0.95rem", marginBottom: "20px" }}>
-            Fondée en 2020, Tomasteed est une banque d&apos;affaires indépendante spécialisée dans la structuration de financements et le conseil en investissements, régulée par la Financial Services Regulatory Authority (FSRA) de Abu Dhabi. Tomasteed est l&apos;une des rares structures africaines et à vocation internationale à être soumise aux standards de gouvernance et de conformité du plus exigeant bureau financier international.
-          </p>
-          <p style={{ color: "#555", lineHeight: 1.8, fontSize: "0.95rem", marginBottom: "20px" }}>
-            Tomasteed est née d&apos;une ambition précise : offrir aux acteurs publics et privés africains, l&apos;expertise d&apos;une banque d&apos;affaires indépendante, entièrement dédiée à leur développement. Notre équipe se mobilise pour construire avec chaque client — qu&apos;il s&apos;agisse d&apos;institutions financières africaines ou internationales — une maîtrise technique des financements alignée sur les objectifs de long terme de nos clients.
-          </p>
-          <p style={{ color: "#555", lineHeight: 1.8, fontSize: "0.95rem" }}>
-            Nous collaborons avec une large diversité d&apos;acteurs — banques locales et régionales, institutions de développement, fonds de private equity et family offices — afin de favoriser la circulation des capitaux, de lever des portefeuilles d&apos;acteurs économiques africains de premier plan.
-          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px", alignItems: "center" }}>
+            <div>
+              <p style={{ color: "#555", lineHeight: 1.8, fontSize: "0.95rem", marginBottom: "20px" }}>
+                Fondée en 2025, Tomasteed est une banque d&apos;affaires indépendante spécialisée dans la structuration de financements et le conseil en investissements, régulée par la Financial Services Regulatory Authority (FSRA) de Abu Dhabi. Tomasteed est l&apos;une des rares structures africaines et à vocation internationale à être soumise aux standards de gouvernance et de conformité du plus exigeant bureau financier international.
+              </p>
+              <p style={{ color: "#555", lineHeight: 1.8, fontSize: "0.95rem", marginBottom: "20px" }}>
+                Tomasteed est née d&apos;une ambition précise : offrir aux acteurs publics et privés africains, l&apos;expertise d&apos;une banque d&apos;affaires indépendante, entièrement dédiée à leur développement. Notre équipe se mobilise pour construire avec chaque client — qu&apos;il s&apos;agisse d&apos;institutions financières africaines ou internationales — une maîtrise technique des financements alignée sur les objectifs de long terme de nos clients.
+              </p>
+              <p style={{ color: "#555", lineHeight: 1.8, fontSize: "0.95rem" }}>
+                Nous collaborons avec une large diversité d&apos;acteurs — banques locales et régionales, institutions de développement, fonds de private equity et family offices — afin de favoriser la circulation des capitaux, de lever des portefeuilles d&apos;acteurs économiques africains de premier plan.
+              </p>
+            </div>
+            <div>
+              <img
+                src="/images/identite-fondee.avif"
+                alt="Fondée en 2025"
+                style={{ width: "100%", height: "340px", objectFit: "cover", borderRadius: "8px", display: "block" }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -64,13 +75,7 @@ export default function NotreIdentitePage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "16px" }}>
             {offices.map((o, i) => (
               <div key={i} style={{ background: "white", border: "1px solid #E5E5E5", borderRadius: "8px", overflow: "hidden" }}>
-                {o.city === "Abidjan" ? (
-                  <img src="/images/identite-abidjan.jpg" alt="Abidjan" style={{ width: "100%", height: "140px", objectFit: "cover", display: "block" }} />
-                ) : o.city === "Dakar" ? (
-                  <img src="/images/identite-dakar.jpg" alt="Dakar" style={{ width: "100%", height: "140px", objectFit: "cover", display: "block" }} />
-                ) : (
-                  <div style={{ height: "140px", background: "#E8E8E8" }} />
-                )}
+                <img src={o.img} alt={o.city} style={{ width: "100%", height: "140px", objectFit: "cover", display: "block" }} />
                 <div style={{ padding: "16px" }}>
                   <div style={{ fontWeight: 700, fontSize: "0.8rem", color: "#888", marginBottom: "4px" }}>{o.country} {o.flag}</div>
                   <div style={{ fontWeight: 700, fontSize: "1rem", marginBottom: "6px" }}>{o.city}</div>

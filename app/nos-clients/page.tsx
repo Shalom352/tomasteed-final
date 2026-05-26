@@ -72,15 +72,16 @@ export default function NosClientsPage() {
               </p>
             </div>
             <div>
-              {activeType === "etats" ? (
-                <img
-                  src="/images/clients-etats.webp"
-                  alt="États et gouvernements souverains"
-                  style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "8px", display: "block" }}
-                />
-              ) : (
-                <div className="image-placeholder" style={{ height: "260px", borderRadius: "8px", background: "#F0F0F0" }} />
-              )}
+              <img
+                src={
+                  activeType === "etats" ? "/images/clients-etats.webp" :
+                  activeType === "agences" ? "/images/clients-agences.avif" :
+                  activeType === "institutions" ? "/images/clients-institutions.avif" :
+                  "/images/clients-sponsors.avif"
+                }
+                alt={current.label}
+                style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "8px", display: "block" }}
+              />
             </div>
           </div>
         </div>
