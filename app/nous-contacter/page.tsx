@@ -9,26 +9,6 @@ const offices = [
   { code: "FRA", city: "Paris", email: "", coverage: "Coverage depuis Paris", bg: "#1A3B8C", flag: "🇫🇷" },
 ];
 
-const contacts = [
-  { name: "Mohamed El Fadel Kane", title: "Managing Director", email: "fadel.kane@tomasteed.com", phone: "(+225) 07 07 08 32" },
-  { name: "Claude Guillabert", title: "Partner", email: "claude.guillabert@tomasteed.com", phone: "(+225) 07 07 08 63" },
-  { name: "Mouhamadou Ben Barka", title: "Managing Partner", email: "contact@tomasteed.com", phone: "" },
-  { name: "Rokhya Gueye", title: "Partner", email: "rokhya.gueye@tomasteed.com", phone: "" },
-  { name: "Stéphane Lekeufack", title: "Director", email: "stephane.lekeufack@tomasteed.com", phone: "" },
-  { name: "Abdel Noah Ango", title: "Vice President", email: "abdel.ango@tomasteed.com", phone: "" },
-];
-
-function AvatarIcon() {
-  return (
-    <div className="avatar">
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-        <circle cx="14" cy="11" r="5.5" fill="#888"/>
-        <path d="M3 25c0-6.075 4.925-11 11-11s11 4.925 11 11" fill="#888"/>
-      </svg>
-    </div>
-  );
-}
-
 export default function NousContacterPage() {
   const [formData, setFormData] = useState({
     name: "",

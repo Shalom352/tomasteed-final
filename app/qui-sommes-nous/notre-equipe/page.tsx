@@ -14,15 +14,6 @@ const team = [
   { name: "Mahmoud Samasso", title: "Analytics", location: "France", email: "mahmoud.samasso@tomasteed.com", bio: "Analytics chez Tomasteed.", photo: "/images/team/mahmoud.jpg" },
 ];
 
-function AvatarIcon() {
-  return (
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-      <circle cx="20" cy="16" r="8" fill="#AAAAAA"/>
-      <path d="M4 36c0-8.837 7.163-16 16-16s16 7.163 16 16" fill="#AAAAAA"/>
-    </svg>
-  );
-}
-
 const locationColors: Record<string, string> = {
   "Côte d'Ivoire": "#DC4920",
   "Émirats Arabes Unis": "#327D48",
