@@ -70,13 +70,26 @@ export default function Navbar() {
 
         {/* Language selector */}
         <div style={{ position: "relative" }} onMouseEnter={() => setLangOpen(true)} onMouseLeave={() => setLangOpen(false)}>
-          <span style={{ cursor: "pointer", fontSize: "0.85rem", color: "#555", display: "flex", alignItems: "center", gap: "4px", fontWeight: 700 }}>
-            Fr <svg width="11" height="11" viewBox="0 0 12 12" fill="currentColor"><path d="M6 8L1 3h10z"/></svg>
+          <span style={{
+            cursor: "pointer",
+            fontSize: "0.82rem",
+            fontWeight: 800,
+            color: "#DC4920",
+            display: "flex",
+            alignItems: "center",
+            gap: "5px",
+            border: "2px solid #DC4920",
+            borderRadius: "20px",
+            padding: "5px 12px",
+            letterSpacing: "0.5px",
+            transition: "all 0.2s",
+          }}>
+            FR <svg width="10" height="10" viewBox="0 0 12 12" fill="currentColor"><path d="M6 8L1 3h10z"/></svg>
           </span>
           {langOpen && (
-            <div style={{ position: "absolute", right: 0, top: "100%", background: "white", border: "1px solid #E5E5E5", borderRadius: "6px", minWidth: "80px", boxShadow: "0 4px 16px rgba(0,0,0,0.1)", padding: "8px 0", zIndex: 200 }}>
-              <span style={{ display: "block", padding: "8px 16px", fontSize: "0.85rem", cursor: "pointer", color: "#DC4920", fontWeight: 700 }}>Fr</span>
-              <span style={{ display: "block", padding: "8px 16px", fontSize: "0.85rem", cursor: "pointer", color: "#555", fontWeight: 600 }}>En</span>
+            <div style={{ position: "absolute", right: 0, top: "calc(100% + 6px)", background: "white", border: "1px solid #E5E5E5", borderRadius: "8px", minWidth: "90px", boxShadow: "0 4px 16px rgba(0,0,0,0.12)", padding: "6px 0", zIndex: 200 }}>
+              <span style={{ display: "block", padding: "9px 18px", fontSize: "0.85rem", cursor: "pointer", color: "#DC4920", fontWeight: 800, background: "rgba(220,73,32,0.06)" }}>FR</span>
+              <span style={{ display: "block", padding: "9px 18px", fontSize: "0.85rem", cursor: "pointer", color: "#444", fontWeight: 600 }}>EN</span>
             </div>
           )}
         </div>
