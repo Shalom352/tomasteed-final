@@ -3,15 +3,15 @@ import Link from "next/link";
 import { useState } from "react";
 
 const team = [
-  { name: "Mohamed El Fadel Kane", title: "Managing Director", location: "Côte d'Ivoire", email: "fadel.kane@tomasteed.com", bio: "Managing Director de Tomasteed. Fondateur de Tomasteed, il apporte une expérience approfondie en structuration de financements et en conseil stratégique sur les marchés africains." },
-  { name: "Claude Guillabert", title: "Partner", location: "Côte d'Ivoire", email: "claude.guillabert@tomasteed.com", bio: "Partner chez Tomasteed. Spécialisé dans les transactions de capital-investissement et la structuration de financements d'infrastructure en Afrique subsaharienne." },
-  { name: "Stéphane Lekeufack", title: "Director", location: "Côte d'Ivoire", email: "stephane.lekeufack@tomasteed.com", bio: "Director chez Tomasteed. Expert en modélisation financière, structuration de dette et analyse crédit sur les marchés africains." },
-  { name: "Abdel Noah Ango", title: "Vice President", location: "Côte d'Ivoire", email: "abdel.ango@tomasteed.com", bio: "Vice President chez Tomasteed. Il dispose d'une forte expérience en structuration de financements à fort impact sur les marchés africains." },
-  { name: "Ange Emmanuel Aynoe", title: "Analyste", location: "Côte d'Ivoire", email: "ange.aynoe@tomasteed.com", bio: "Analyste chez Tomasteed, spécialisé dans la modélisation financière et l'analyse de transactions complexes." },
-  { name: "Gadidou Koné", title: "Analytics", location: "Côte d'Ivoire", email: "siddy.kone@tomasteed.com", bio: "Analytics chez Tomasteed. Contribue aux analyses quantitatives et à la structuration des solutions financières." },
-  { name: "Mouhamadou Ben Barka", title: "Managing Partner", location: "Émirats Arabes Unis", email: "contact@tomasteed.com", bio: "Managing Partner chez Tomasteed basé à Abu Dhabi. Responsable des opérations et du développement sur le marché du Moyen-Orient et d'Afrique du Nord." },
-  { name: "Rokhya Gueye", title: "Partner", location: "France", email: "rokhya.gueye@tomasteed.com", bio: "Partner chez Tomasteed basée à Paris. Expertise en conseil financier stratégique aux États et aux grandes entreprises africaines sur leurs opérations de financement." },
-  { name: "Mahmoud Samasso", title: "Analytics", location: "France", email: "mahmoud.samasso@tomasteed.com", bio: "Analytics chez Tomasteed basé à Paris. Contribue aux analyses de marché et aux études sectorielles pour les clients européens et africains." },
+  { name: "Mohamed El Fadel Kane", title: "Managing Director", location: "Côte d'Ivoire", email: "fadel.kane@tomasteed.com", bio: "Managing Director de Tomasteed.", photo: "/images/team/kane.png" },
+  { name: "Claude Guillabert", title: "Partner", location: "Côte d'Ivoire", email: "claude.guillabert@tomasteed.com", bio: "Partner chez Tomasteed.", photo: "/images/team/guillabert.png" },
+  { name: "Stéphane Lekeufack", title: "Director", location: "Côte d'Ivoire", email: "stephane.lekeufack@tomasteed.com", bio: "Director chez Tomasteed.", photo: "/images/team/lekeufack.png" },
+  { name: "Abdel Noah Ango", title: "Vice President", location: "Côte d'Ivoire", email: "abdel.ango@tomasteed.com", bio: "Vice President chez Tomasteed.", photo: "/images/team/nazir.jpg" },
+  { name: "Ange Emmanuel Aynoe", title: "Analyste", location: "Côte d'Ivoire", email: "ange.aynoe@tomasteed.com", bio: "Analyste chez Tomasteed.", photo: "/images/team/ange.png" },
+  { name: "Gadidou Koné", title: "Analytics", location: "Côte d'Ivoire", email: "siddy.kone@tomasteed.com", bio: "Analytics chez Tomasteed.", photo: "/images/team/siddiq.jpg" },
+  { name: "Mouhamadou Ben Barka", title: "Managing Partner", location: "Émirats Arabes Unis", email: "contact@tomasteed.com", bio: "Managing Partner chez Tomasteed.", photo: "/images/team/benbarka.png" },
+  { name: "Rokhya Gueye", title: "Partner", location: "France", email: "rokhya.gueye@tomasteed.com", bio: "Partner chez Tomasteed.", photo: "/images/team/gueye.png" },
+  { name: "Mahmoud Samasso", title: "Analytics", location: "France", email: "mahmoud.samasso@tomasteed.com", bio: "Analytics chez Tomasteed.", photo: "/images/team/mahmoud.jpg" },
 ];
 
 function AvatarIcon() {
@@ -68,9 +68,7 @@ export default function NotreEquipePage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "20px" }}>
             {team.map((member, i) => (
               <div key={i} className="team-card" onClick={() => setSelected(selected === i ? null : i)}>
-                <div className="image-placeholder" style={{ height: "180px", flexDirection: "column", gap: "8px" }}>
-                  <AvatarIcon />
-                </div>
+                <img src={member.photo} alt={member.name} style={{ width: "100%", height: "180px", objectFit: "cover", objectPosition: "top", display: "block" }} />
                 <div style={{ padding: "16px" }}>
                   <div style={{ fontWeight: 800, fontSize: "0.9rem", marginBottom: "2px" }}>{member.name}</div>
                   <div style={{ color: "#888", fontSize: "0.78rem", marginBottom: "6px" }}>{member.title}</div>
