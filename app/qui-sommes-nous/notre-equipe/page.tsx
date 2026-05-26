@@ -4,20 +4,20 @@ import { useState } from "react";
 
 const team = [
   { name: "Mohamed El Fadel Kane", title: "Managing Director", location: "Côte d'Ivoire", email: "fadel.kane@tomasteed.com", bio: "Managing Director de Tomasteed.", photo: "/images/team/kane.png" },
+  { name: "Moustapha Ben Barka", title: "Managing Partner", location: "Côte d'Ivoire", email: "contact@tomasteed.com", bio: "Managing Partner chez Tomasteed.", photo: "/images/team/benbarka.png" },
   { name: "Claude Guillabert", title: "Partner", location: "Côte d'Ivoire", email: "claude.guillabert@tomasteed.com", bio: "Partner chez Tomasteed.", photo: "/images/team/guillabert.png" },
+  { name: "Rokhya Gueye", title: "Partner", location: "France", email: "rokhya.gueye@tomasteed.com", bio: "Partner chez Tomasteed.", photo: "/images/team/gueye.png" },
   { name: "Stéphane Lekeufack", title: "Director", location: "Côte d'Ivoire", email: "stephane.lekeufack@tomasteed.com", bio: "Director chez Tomasteed.", photo: "/images/team/lekeufack.png" },
   { name: "Abd'Al Nazir ANGO", title: "Vice President", location: "Côte d'Ivoire", email: "abdel.ango@tomasteed.com", bio: "Vice President chez Tomasteed.", photo: "/images/team/nazir.jpg" },
-  { name: "Ange Emmanuel Aynoe", title: "Analyste", location: "Côte d'Ivoire", email: "ange.aynoe@tomasteed.com", bio: "Analyste chez Tomasteed.", photo: "/images/team/ange.png" },
-  { name: "Siddiq KONÉ", title: "Analytics", location: "Côte d'Ivoire", email: "siddy.kone@tomasteed.com", bio: "Analytics chez Tomasteed.", photo: "/images/team/siddiq.jpg" },
-  { name: "Mouhamadou Ben Barka", title: "Managing Partner", location: "Côte d'Ivoire", email: "contact@tomasteed.com", bio: "Managing Partner chez Tomasteed.", photo: "/images/team/benbarka.png" },
-  { name: "Rokhya Gueye", title: "Partner", location: "France", email: "rokhya.gueye@tomasteed.com", bio: "Partner chez Tomasteed.", photo: "/images/team/gueye.png" },
+  { name: "Ange Emmanuel Aynoe", title: "Associate", location: "Côte d'Ivoire", email: "ange.aynoe@tomasteed.com", bio: "Associate chez Tomasteed.", photo: "/images/team/ange.png" },
+  { name: "Siddiq KONÉ", title: "Analyste financier", location: "Côte d'Ivoire", email: "siddy.kone@tomasteed.com", bio: "Analyste financier chez Tomasteed.", photo: "/images/team/siddiq.jpg" },
   { name: "Mahmoud Samasso", title: "Analytics", location: "France", email: "mahmoud.samasso@tomasteed.com", bio: "Analytics chez Tomasteed.", photo: "/images/team/mahmoud.jpg" },
 ];
 
 const locationColors: Record<string, string> = {
-  "Côte d'Ivoire": "#DC4920",
-  "Émirats Arabes Unis": "#327D48",
-  "France": "#1A3B8C",
+  "Côte d'Ivoire": "#1C1C2E",
+  "Émirats Arabes Unis": "#1C1C2E",
+  "France": "#1C1C2E",
 };
 
 export default function NotreEquipePage() {
