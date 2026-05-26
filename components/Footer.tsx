@@ -3,12 +3,17 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#1C1C2E", color: "white", marginTop: "auto" }}>
+    <footer style={{ background: "#2E2D2C", color: "white", marginTop: "auto" }}>
       <div className="container" style={{ padding: "48px 24px 24px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr", gap: "48px", marginBottom: "40px" }}>
+
           {/* Brand */}
           <div>
-            <div style={{ fontSize: "1.3rem", fontWeight: 800, marginBottom: "16px" }}>Tomasteed</div>
+            <div style={{ marginBottom: "16px" }}>
+              <span style={{ fontSize: "1.5rem", fontWeight: 900, color: "white", letterSpacing: "-0.5px" }}>
+                Tomasteed<span style={{ color: "#DC4920" }}>.</span>
+              </span>
+            </div>
             <p style={{ color: "#AAAAAA", fontSize: "0.85rem", lineHeight: "1.6", maxWidth: "320px" }}>
               Banque d&apos;affaires indépendante spécialisée dans la structuration de financements et le conseil en investissements sur les marchés africains et à l&apos;international.
             </p>
@@ -16,34 +21,26 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <div style={{ fontWeight: 700, marginBottom: "16px", fontSize: "0.95rem" }}>Navigation</div>
+            <div style={{ fontWeight: 800, marginBottom: "16px", fontSize: "0.9rem", letterSpacing: "0.5px" }}>Navigation</div>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <Link href="/nos-clients" style={{ color: "#AAAAAA", textDecoration: "none", fontSize: "0.85rem" }}
-                onMouseEnter={e => (e.currentTarget.style.color = "white")}
-                onMouseLeave={e => (e.currentTarget.style.color = "#AAAAAA")}>
-                Nos clients
-              </Link>
-              <Link href="/qui-sommes-nous/notre-identite" style={{ color: "#AAAAAA", textDecoration: "none", fontSize: "0.85rem" }}
-                onMouseEnter={e => (e.currentTarget.style.color = "white")}
-                onMouseLeave={e => (e.currentTarget.style.color = "#AAAAAA")}>
-                Notre identité
-              </Link>
-              <Link href="/qui-sommes-nous/notre-equipe" style={{ color: "#AAAAAA", textDecoration: "none", fontSize: "0.85rem" }}
-                onMouseEnter={e => (e.currentTarget.style.color = "white")}
-                onMouseLeave={e => (e.currentTarget.style.color = "#AAAAAA")}>
-                Notre équipe
-              </Link>
-              <Link href="/carrieres" style={{ color: "#AAAAAA", textDecoration: "none", fontSize: "0.85rem" }}
-                onMouseEnter={e => (e.currentTarget.style.color = "white")}
-                onMouseLeave={e => (e.currentTarget.style.color = "#AAAAAA")}>
-                Nous rejoindre
-              </Link>
+              {[
+                { href: "/nos-clients", label: "Nos clients" },
+                { href: "/qui-sommes-nous/notre-identite", label: "Notre identité" },
+                { href: "/qui-sommes-nous/notre-equipe", label: "Notre équipe" },
+                { href: "/carrieres", label: "Nous rejoindre" },
+              ].map(({ href, label }) => (
+                <Link key={href} href={href} style={{ color: "#AAAAAA", textDecoration: "none", fontSize: "0.85rem", fontWeight: 600 }}
+                  onMouseEnter={e => (e.currentTarget.style.color = "white")}
+                  onMouseLeave={e => (e.currentTarget.style.color = "#AAAAAA")}>
+                  {label}
+                </Link>
+              ))}
             </div>
           </div>
 
           {/* Social & Contact */}
           <div>
-            <div style={{ fontWeight: 700, marginBottom: "16px", fontSize: "0.95rem" }}>Suivez-nous :</div>
+            <div style={{ fontWeight: 800, marginBottom: "16px", fontSize: "0.9rem", letterSpacing: "0.5px" }}>Suivez-nous :</div>
             <a href="https://www.linkedin.com/company/tomasteed" target="_blank" rel="noopener noreferrer"
               style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: "40px", height: "40px", background: "#0077B5", borderRadius: "6px", marginBottom: "20px" }}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
@@ -52,7 +49,7 @@ export default function Footer() {
             </a>
             <div>
               <a href="mailto:contact@tomasteed.com"
-                style={{ color: "#AAAAAA", textDecoration: "none", fontSize: "0.85rem" }}
+                style={{ color: "#AAAAAA", textDecoration: "none", fontSize: "0.85rem", fontWeight: 600 }}
                 onMouseEnter={e => (e.currentTarget.style.color = "white")}
                 onMouseLeave={e => (e.currentTarget.style.color = "#AAAAAA")}>
                 contact@tomasteed.com
@@ -62,21 +59,21 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div style={{ borderTop: "1px solid #333", paddingTop: "20px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px" }}>
+        <div style={{ borderTop: "1px solid #444", paddingTop: "20px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px" }}>
           <span style={{ color: "#888", fontSize: "0.8rem" }}>
             Copyright 2026 Tomasteed · Tous droits réservés
           </span>
           <div style={{ display: "flex", gap: "24px" }}>
-            <Link href="/politique-confidentialite" style={{ color: "#888", textDecoration: "none", fontSize: "0.8rem" }}
-              onMouseEnter={e => (e.currentTarget.style.color = "white")}
-              onMouseLeave={e => (e.currentTarget.style.color = "#888")}>
-              Politique de confidentialité
-            </Link>
-            <Link href="/mentions-legales" style={{ color: "#888", textDecoration: "none", fontSize: "0.8rem" }}
-              onMouseEnter={e => (e.currentTarget.style.color = "white")}
-              onMouseLeave={e => (e.currentTarget.style.color = "#888")}>
-              Mentions légales
-            </Link>
+            {[
+              { href: "/politique-confidentialite", label: "Politique de confidentialité" },
+              { href: "/mentions-legales", label: "Mentions légales" },
+            ].map(({ href, label }) => (
+              <Link key={href} href={href} style={{ color: "#888", textDecoration: "none", fontSize: "0.8rem" }}
+                onMouseEnter={e => (e.currentTarget.style.color = "white")}
+                onMouseLeave={e => (e.currentTarget.style.color = "#888")}>
+                {label}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

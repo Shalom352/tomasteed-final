@@ -1,46 +1,19 @@
 const sectors = [
-  {
-    title: "Eau & Assainissement",
-    desc: "Structuration de financements pour l'accès à l'eau potable et l'assainissement. Des investissements essentiels pour le développement humain et la croissance durable en Afrique.",
-  },
-  {
-    title: "Santé",
-    desc: "Financement d'infrastructures hospitalières, de cliniques et de projets innovants. Amélioration de l'offre de soins et promotion de solutions médicales adaptées aux réalités du continent.",
-  },
-  {
-    title: "Agro-Industrie & Agroalimentaire",
-    desc: "Projets agro-industriels, instruments de crédit spécialisés, solutions d'import/export, instruments de crédit spécialisés et conseil stratégique pour la souveraineté alimentaire et la création de valeur agricole.",
-  },
-  {
-    title: "Énergie & Ressources naturelles",
-    desc: "Accompagnement dans la structuration de projets énergétiques — électricité, renouvelable, pétrole/gaz. Soutien aux investissements dans les environnements réglementaires complexes.",
-  },
-  {
-    title: "Infrastructures & Secteur public",
-    desc: "Financement d'infrastructures hospitalières, de cliniques et de projets innovants. Amélioration de l'offre de soins et promotion de solutions médicales de qualité adaptées aux réalités du continent.",
-  },
-  {
-    title: "Industrie Manufacturière",
-    desc: "Financement de la modernisation industrielle – usines, chaînes de production, zones industrielles. Accompagnement stratégique pour le renforcement de la valeur ajoutée locale.",
-  },
-  {
-    title: "Télécommunications, Médias & Technologie",
-    desc: "Financement de licences, d'infrastructures télécoms et des plateformes numériques. Soutien à la transformation digitale et à l'émergence de l'économie de la connaissance en Afrique.",
-  },
-  {
-    title: "Immobilier & Construction",
-    desc: "Structuration de financements pour des projets immobiliers résidentiels et tertiaires. Accompagnement dans la croissance des promoteurs et bailleurs sociaux à l'échelle africaine.",
-  },
-  {
-    title: "Mines & Industries extractives",
-    desc: "Solutions financières adaptées aux projets miniers, pétroliers et extractifs. Connaissance approfondie des standards internationaux et des spécificités réglementaires locales.",
-  },
+  { title: "Agro-Industrie & Agroalimentaire", desc: "Nous accompagnons les acteurs de l'agro-industrie dans la structuration et le financement de leurs chaînes de valeur agricoles, et la création d'infrastructures durables." },
+  { title: "Santé", desc: "Nous facilitons le financement de cliniques, d'hôpitaux et de projets innovants, améliorant de l'accès à la santé et la promotion de solutions médicales de qualité adaptées aux réalités du continent." },
+  { title: "Mines & Industries extractives", desc: "Solutions financières adaptées aux projets miniers, pétroliers et extractifs. Connaissance approfondie des standards internationaux et des spécificités réglementaires locales." },
+  { title: "Hôtellerie, Distribution & Immobilier", desc: "Structuration de financements pour des projets hôteliers, de distribution et immobiliers résidentiels et tertiaires à l'échelle africaine." },
+  { title: "Infrastructures & Construction", desc: "Nous proposons des financements pour les projets de construction, qu'il s'agisse d'infrastructures publiques ou privées, en respectant les plus hauts standards de qualité et les exigences locales." },
+  { title: "Pétrole & Gaz", desc: "Nous accompagnons les entreprises du secteur pétrolier et guidons dans la mobilisation du capital pour la production, la distribution et la sécurisation de projets énergétiques complexes." },
+  { title: "Industrie Manufacturière", desc: "Nous soutenons le développement de l'industrie manufacturière en Afrique, en favorisant la modernisation des usines et l'augmentation des capacités productives et la valeur ajoutée locale." },
+  { title: "Eau & Assainissement", desc: "Nous structurons des financements pour des projets d'accès à l'eau potable et l'assainissement, contribuant au développement humain et à la croissance durable en Afrique." },
+  { title: "Énergie Renouvelable", desc: "Nous mobilisons des capitaux pour la transition énergétique africaine — solaire, éolien, hydraulique — afin de développer des infrastructures à impact positif et durables." },
 ];
 
-function ImagePlaceholder() {
+function ImagePlaceholderIcon() {
   return (
     <div className="image-placeholder" style={{ height: "160px" }}>
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#AAAAAA" strokeWidth="1.5">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#AAAAAA" strokeWidth="1.5">
         <rect x="3" y="3" width="18" height="18" rx="2"/>
         <circle cx="8.5" cy="8.5" r="1.5" fill="#AAAAAA"/>
         <path d="M21 15l-5-5L5 21"/>
@@ -62,8 +35,8 @@ export default function NosSecteurPage() {
       {/* Intro */}
       <section style={{ padding: "48px 0 40px", background: "white" }}>
         <div className="container">
-          <h2 style={{ fontSize: "1.3rem", fontWeight: 700, marginBottom: "8px" }}>Nos secteurs d&apos;intervention</h2>
-          <p style={{ color: "#E8552E", fontWeight: 600, marginBottom: "8px", fontSize: "1rem" }}>
+          <h2 style={{ fontSize: "1.3rem", fontWeight: 800, marginBottom: "8px" }}>Nos secteurs d&apos;intervention</h2>
+          <p style={{ color: "#DC4920", fontWeight: 700, marginBottom: "8px", fontSize: "0.95rem" }}>
             Une expertise multisectorielle au service du continent.
           </p>
           <p style={{ color: "#555", lineHeight: 1.7, fontSize: "0.9rem" }}>
@@ -78,10 +51,10 @@ export default function NosSecteurPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px" }}>
             {sectors.map((s, i) => (
               <div key={i} className="sector-card" style={{ background: "#F9F9F9" }}>
-                <ImagePlaceholder />
+                <ImagePlaceholderIcon />
                 <div style={{ padding: "20px" }}>
-                  <h3 style={{ fontWeight: 700, marginBottom: "10px", fontSize: "0.95rem" }}>{s.title}</h3>
-                  <p style={{ color: "#666", fontSize: "0.82rem", lineHeight: 1.6, margin: 0 }}>{s.desc}</p>
+                  <h3 style={{ fontWeight: 800, marginBottom: "10px", fontSize: "0.9rem" }}>{s.title}</h3>
+                  <p style={{ color: "#666", fontSize: "0.8rem", lineHeight: 1.6, margin: 0 }}>{s.desc}</p>
                 </div>
               </div>
             ))}
