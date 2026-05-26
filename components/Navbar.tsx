@@ -26,8 +26,6 @@ export default function Navbar() {
 
         {/* Nav links */}
         <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
-          <Link href="/" className={`nav-link${isActive("/") ? " active" : ""}`}>Accueil</Link>
-
           {/* Qui sommes-nous dropdown */}
           <div style={{ position: "relative" }} onMouseEnter={() => setQuiOpen(true)} onMouseLeave={() => setQuiOpen(false)}>
             <span className={`nav-link${isActive("/qui-sommes-nous") ? " active" : ""}`}
@@ -55,9 +53,6 @@ export default function Navbar() {
 
           <Link href="/nos-domaines-expertise" className={`nav-link${isActive("/nos-domaines-expertise") ? " active" : ""}`}>
             Nos domaines d&apos;expertise
-          </Link>
-          <Link href="/notre-processus" className={`nav-link${isActive("/notre-processus") ? " active" : ""}`}>
-            Notre processus
           </Link>
           <Link href="/nos-secteurs-intervention" className={`nav-link${isActive("/nos-secteurs-intervention") ? " active" : ""}`}>
             Nos secteurs d&apos;intervention
