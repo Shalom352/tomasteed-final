@@ -8,8 +8,8 @@ const team = [
   { name: "Stéphane Lekeufack", title: "Director", location: "Côte d'Ivoire", email: "stephane.lekeufack@tomasteed.com", bio: "Director chez Tomasteed.", photo: "/images/team/lekeufack.png" },
   { name: "Abdel Noah Ango", title: "Vice President", location: "Côte d'Ivoire", email: "abdel.ango@tomasteed.com", bio: "Vice President chez Tomasteed.", photo: "/images/team/nazir.jpg" },
   { name: "Ange Emmanuel Aynoe", title: "Analyste", location: "Côte d'Ivoire", email: "ange.aynoe@tomasteed.com", bio: "Analyste chez Tomasteed.", photo: "/images/team/ange.png" },
-  { name: "Gadidou Koné", title: "Analytics", location: "Côte d'Ivoire", email: "siddy.kone@tomasteed.com", bio: "Analytics chez Tomasteed.", photo: "/images/team/siddiq.jpg" },
-  { name: "Mouhamadou Ben Barka", title: "Managing Partner", location: "Émirats Arabes Unis", email: "contact@tomasteed.com", bio: "Managing Partner chez Tomasteed.", photo: "/images/team/benbarka.png" },
+  { name: "Siddi Koné", title: "Analytics", location: "Côte d'Ivoire", email: "siddy.kone@tomasteed.com", bio: "Analytics chez Tomasteed.", photo: "/images/team/siddiq.jpg" },
+  { name: "Mouhamadou Ben Barka", title: "Managing Partner", location: "Côte d'Ivoire", email: "contact@tomasteed.com", bio: "Managing Partner chez Tomasteed.", photo: "/images/team/benbarka.png" },
   { name: "Rokhya Gueye", title: "Partner", location: "France", email: "rokhya.gueye@tomasteed.com", bio: "Partner chez Tomasteed.", photo: "/images/team/gueye.png" },
   { name: "Mahmoud Samasso", title: "Analytics", location: "France", email: "mahmoud.samasso@tomasteed.com", bio: "Analytics chez Tomasteed.", photo: "/images/team/mahmoud.jpg" },
 ];
