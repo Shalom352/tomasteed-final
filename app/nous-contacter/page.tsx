@@ -2,10 +2,10 @@
 import { useState } from "react";
 
 const offices = [
-  { code: "UAE", city: "Abu Dhabi", email: "contact@tomasteed.com", coverage: "Siège social · Régulation FSRA", bg: "#327D48", flag: "🇦🇪" },
-  { code: "CIV", city: "Abidjan", email: "", coverage: "Coverage depuis Abidjan", bg: "#DC4920", flag: "🇨🇮" },
-  { code: "SEN", city: "Dakar", email: "", coverage: "Coverage depuis Dakar", bg: "#327D48", flag: "🇸🇳" },
-  { code: "FRA", city: "Paris", email: "", coverage: "Coverage depuis Paris", bg: "#1A3B8C", flag: "🇫🇷" },
+  { code: "UAE", city: "Abu Dhabi", email: "contact@tomasteed.com", coverage: "Siège social · Régulation FSRA", bg: "#DC4920", flag: "🇦🇪" },
+  { code: "CIV", city: "Abidjan", email: "", coverage: "Coverage depuis Abidjan", bg: "#1A1A1A", flag: "🇨🇮" },
+  { code: "SEN", city: "Dakar", email: "", coverage: "Coverage depuis Dakar", bg: "#DC4920", flag: "🇸🇳" },
+  { code: "FRA", city: "Paris", email: "", coverage: "Coverage depuis Paris", bg: "#1A1A1A", flag: "🇫🇷" },
 ];
 
 export default function NousContacterPage() {
@@ -86,10 +86,10 @@ export default function NousContacterPage() {
               </p>
 
               {status === "success" ? (
-                <div style={{ background: "#F4FDF7", border: "1px solid #D1F2DB", borderRadius: "8px", padding: "32px", textAlign: "center" }}>
-                  <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "#327D48", color: "white", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4rem", margin: "0 auto 16px" }}>✓</div>
-                  <h3 style={{ fontSize: "1.1rem", fontWeight: 800, color: "#1E5A34", marginBottom: "12px" }}>Message Transmis</h3>
-                  <p style={{ color: "#2E5A3E", fontSize: "0.85rem", lineHeight: 1.6, margin: 0 }}>
+                <div style={{ background: "#FFF8F6", border: "1px solid #F5C5B8", borderRadius: "8px", padding: "32px", textAlign: "center" }}>
+                  <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "#DC4920", color: "white", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.4rem", margin: "0 auto 16px" }}>✓</div>
+                  <h3 style={{ fontSize: "1.1rem", fontWeight: 800, color: "#1A1A1A", marginBottom: "12px" }}>Message Transmis</h3>
+                  <p style={{ color: "#444", fontSize: "0.85rem", lineHeight: 1.6, margin: 0 }}>
                     Nous vous remercions pour votre message. Votre demande a bien été enregistrée avec le plus haut niveau de confidentialité. Un de nos associés prendra contact avec vous sous 24 heures ouvrées.
                   </p>
                   <button 
@@ -217,9 +217,9 @@ export default function NousContacterPage() {
       </section>
 
       {/* Nos présences */}
-      <section style={{ background: "#F5F5F5", padding: "48px 0" }}>
+      <section style={{ background: "#1A1A1A", padding: "48px 0" }}>
         <div className="container">
-          <h2 style={{ fontSize: "1.3rem", fontWeight: 800, marginBottom: "24px" }}>Nos équipes</h2>
+          <h2 style={{ fontSize: "1.3rem", fontWeight: 800, marginBottom: "24px", color: "white" }}>Nos équipes</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "16px" }}>
             {offices.map((o, i) => (
               <div key={i} style={{ background: o.bg, color: "white", borderRadius: "8px", padding: "24px" }}>
