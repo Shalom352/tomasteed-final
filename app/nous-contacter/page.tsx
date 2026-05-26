@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 
 const offices = [
   { code: "UAE", city: "Abu Dhabi", email: "contact@tomasteed.com", coverage: "Siège social · Régulation FSRA", bg: "#327D48", flag: "🇦🇪" },

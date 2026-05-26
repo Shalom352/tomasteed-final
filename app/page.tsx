@@ -37,16 +37,6 @@ const valueAdded = [
   { num: 3, title: "Engagement ESGune finance responsable", desc: "Chaque solution que nous concevons intègre les critères ESG dès sa conception. Nous contribuons à la transition économique durable de l'Afrique, en alignant performance financière et impact positif." },
 ];
 
-function ImagePlaceholderIcon() {
-  return (
-    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#AAAAAA" strokeWidth="1.5">
-      <rect x="3" y="3" width="18" height="18" rx="2"/>
-      <circle cx="8.5" cy="8.5" r="1.5" fill="#AAAAAA"/>
-      <path d="M21 15l-5-5L5 21"/>
-    </svg>
-  );
-}
-
 export default function HomePage() {
   return (
     <div>
