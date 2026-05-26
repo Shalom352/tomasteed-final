@@ -11,7 +11,7 @@ const team = [
   { name: "Abd'Al Nazir ANGO", title: "Vice President", location: "Côte d'Ivoire", email: "abdel.ango@tomasteed.com", bio: "Vice President chez Tomasteed.", photo: "/images/team/nazir.jpg" },
   { name: "Ange Emmanuel Aynoe", title: "Associate", location: "Côte d'Ivoire", email: "ange.aynoe@tomasteed.com", bio: "Associate chez Tomasteed.", photo: "/images/team/ange.png" },
   { name: "Siddiq KONÉ", title: "Analyste financier", location: "Côte d'Ivoire", email: "siddy.kone@tomasteed.com", bio: "Analyste financier chez Tomasteed.", photo: "/images/team/siddiq.jpg" },
-  { name: "Mahmoud Samasso", title: "Analytics", location: "France", email: "mahmoud.samasso@tomasteed.com", bio: "Analytics chez Tomasteed.", photo: "/images/team/mahmoud.jpg" },
+  { name: "Mahmoud Samassi", title: "Stagiaire analyste", location: "France", email: "mahmoud.samassi@tomasteed.com", bio: "Stagiaire analyste chez Tomasteed.", photo: "/images/team/mahmoud.jpg" },
 ];
 
 const locationColors: Record<string, string> = {
