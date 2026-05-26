@@ -16,6 +16,7 @@ const sectorImages: Record<string, string> = {
   "Mines & Industries extractives": "/images/secteurs-mines.avif",
   "Hôtellerie, Distribution & Immobilier": "/images/secteurs-immobilier.avif",
   "Infrastructures & Construction": "/images/secteurs-infrastructures.avif",
+  "Pétrole & Gaz": "/images/secteurs-petrole-gaz.png",
   "Industrie Manufacturière": "/images/secteurs-industrie.avif",
   "Eau & Assainissement": "/images/secteurs-eau.avif",
   "Énergie Renouvelable": "/images/secteurs-energie.avif",
@@ -24,10 +25,25 @@ const sectorImages: Record<string, string> = {
 export default function NosSecteurPage() {
   return (
     <div>
-      {/* Hero */}
-      <section className="page-hero">
-        <div className="container">
-          <h1 className="section-title">Nos secteurs d&apos;intervention</h1>
+      {/* Hero avec fond photo flouté */}
+      <section style={{
+        padding: "80px 0",
+        position: "relative",
+        overflow: "hidden",
+      }}>
+        {/* Blurred background layer */}
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          backgroundImage: "url('/images/secteurs-hero.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "blur(8px) brightness(0.55)",
+          transform: "scale(1.05)",
+          zIndex: 0,
+        }} />
+        <div className="container" style={{ position: "relative", zIndex: 1 }}>
+          <h1 style={{ fontSize: "2.5rem", fontWeight: 800, color: "white", margin: 0 }}>Nos secteurs d&apos;intervention</h1>
         </div>
       </section>
 
