@@ -10,7 +10,7 @@ const clientTypes = [
   {
     id: "agences",
     label: "Agences publiques et entités parapubliques",
-    desc: "Accompagnement des agences et entités parapubliques dans leurs opérations de financement — levée de fonds, structuration de dette, optimisation des bilans — avec une attention particulière à la gouvernance et au respect des mandats publics.",
+    desc: "Accompagnement des agences et entités parapubliques dans leurs opérations de financementlevée de fonds, structuration de dette, optimisation des bilansavec une attention particulière à la gouvernance et au respect des mandats publics.",
   },
   {
     id: "institutions",

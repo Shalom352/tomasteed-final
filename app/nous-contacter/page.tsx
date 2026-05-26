@@ -44,7 +44,7 @@ export default function NousContacterPage() {
                 Parlons de votre projet
               </h2>
               <p style={{ color: "#555", lineHeight: 1.7, fontSize: "0.9rem" }}>
-                Chaque projet commence par une conversation. Prenez contact avec nos équipes — nous vous répondrons avec la confidentialité et la diligence qui s&apos;imposent.
+                Chaque projet commence par une conversation. Prenez contact avec nos équipesnous vous répondrons avec la confidentialité et la diligence qui s&apos;imposent.
               </p>
               <div style={{ marginTop: "24px" }}>
                 <a href="mailto:contact@tomasteed.com" className="btn-orange">Nous écrire</a>

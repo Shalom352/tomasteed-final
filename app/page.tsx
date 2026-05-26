@@ -3,7 +3,7 @@ import Link from "next/link";
 const stats = [
   { num: "12+", label: "Ans d'expérience", desc: "En financements structurés, marchés de capitaux et conseil stratégique" },
   { num: "4", label: "Pays de présence", desc: "Émirats Arabes Unis, Côte d'Ivoire, Sénégal, France" },
-  { num: "FSRA", label: "Régulé ADGM", desc: "Abu Dhabi Global Market — standard de conformité international de premier plan" },
+  { num: "FSRA", label: "Régulé ADGM", desc: "Abu Dhabi Global Marketstandard de conformité international de premier plan" },
 ];
 
 const values = [
@@ -34,7 +34,7 @@ const clientLogos = [
 const valueAdded = [
   { num: 1, title: "Accès privilégié aux capitaux internationaux", desc: "Une forte connaissance des investisseurs mondiaux et de leurs stratégies. Nous facilitons les transactions et accompagnons la concrétisation de vos projets auprès des meilleurs partenaires financiers." },
   { num: 2, title: "Des solutions financières sur mesure", desc: "Grâce à notre expertise en financements structurés et notre capacité d'innovation, nous disposons d'une ingénierie financière hautement personnalisable, adaptée aux spécificités de chaque client." },
-  { num: 3, title: "Engagement ESG — une finance responsable", desc: "Chaque solution que nous concevons intègre les critères ESG dès sa conception. Nous contribuons à la transition économique durable de l'Afrique, en alignant performance financière et impact positif." },
+  { num: 3, title: "Engagement ESGune finance responsable", desc: "Chaque solution que nous concevons intègre les critères ESG dès sa conception. Nous contribuons à la transition économique durable de l'Afrique, en alignant performance financière et impact positif." },
 ];
 
 function ImagePlaceholderIcon() {
@@ -109,7 +109,7 @@ export default function HomePage() {
             Composée d&apos;une équipe de professionnels de nationalités variées, notre équipe compte en moyenne plus de <strong>12 ans d&apos;expérience</strong> en financements structurés, marchés de capitaux et conseil stratégique.
           </p>
           <p style={{ color: "#555", lineHeight: 1.8, fontSize: "0.95rem" }}>
-            Nous collaborons avec une large diversité d&apos;acteurs — banques locales et régionales, institutions de développement, fonds de private equity et family offices — pour favoriser la circulation des capitaux et accompagner les grandes décisions économiques africaines.
+            Nous collaborons avec une large diversité d&apos;acteursbanques locales et régionales, institutions de développement, fonds de private equity et family officespour favoriser la circulation des capitaux et accompagner les grandes décisions économiques africaines.
           </p>
         </div>
       </section>

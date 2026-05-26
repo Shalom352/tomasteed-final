@@ -7,7 +7,7 @@ const sectors = [
   { title: "Pétrole & Gaz", desc: "Nous accompagnons les entreprises du secteur pétrolier et guidons dans la mobilisation du capital pour la production, la distribution et la sécurisation de projets énergétiques complexes." },
   { title: "Industrie Manufacturière", desc: "Nous soutenons le développement de l'industrie manufacturière en Afrique, en favorisant la modernisation des usines et l'augmentation des capacités productives et la valeur ajoutée locale." },
   { title: "Eau & Assainissement", desc: "Nous structurons des financements pour des projets d'accès à l'eau potable et l'assainissement, contribuant au développement humain et à la croissance durable en Afrique." },
-  { title: "Énergie Renouvelable", desc: "Nous mobilisons des capitaux pour la transition énergétique africaine — solaire, éolien, hydraulique — afin de développer des infrastructures à impact positif et durables." },
+  { title: "Énergie Renouvelable", desc: "Nous mobilisons des capitaux pour la transition énergétique africainesolaire, éolien, hydrauliqueafin de développer des infrastructures à impact positif et durables." },
 ];
 
 const sectorImages: Record<string, string> = {

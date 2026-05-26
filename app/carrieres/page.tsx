@@ -5,15 +5,15 @@ const criteria = [
   },
   {
     title: "Sens du client & de l'engagement",
-    desc: "La capacité à comprendre les enjeux de nos clients, à anticiper leurs besoins et à s'impliquer dans la durée — bien au-delà de la simple exécution technique.",
+    desc: "La capacité à comprendre les enjeux de nos clients, à anticiper leurs besoins et à s'impliquer dans la duréebien au-delà de la simple exécution technique.",
   },
   {
     title: "Connaissance de l'Afrique",
-    desc: "Une compréhension des marchés africains — leur complexité, leurs dynamiques, leurs opportunités. Une expérience ou un ancrage africain est un atout déterminant.",
+    desc: "Une compréhension des marchés africainsleur complexité, leurs dynamiques, leurs opportunités. Une expérience ou un ancrage africain est un atout déterminant.",
   },
   {
     title: "Intégrité & discrétion",
-    desc: "Nous travaillons sur des mandats sensibles pour des clients exigeants. L'intégrité n'est pas un principe affiché — c'est une condition non négociable pour exercer chez Tomasteed.",
+    desc: "Nous travaillons sur des mandats sensibles pour des clients exigeants. L'intégrité n'est pas un principe affichéc'est une condition non négociable pour exercer chez Tomasteed.",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function CarrieresPage() {
             Tomasteed est une institution en construction. Nous recrutons des professionnels qui partagent notre ambition : bâtir une banque d&apos;affaires africaine de référence, fondée sur l&apos;excellence technique, l&apos;intégrité et l&apos;engagement.
           </p>
           <p style={{ color: "#333", fontWeight: 600, lineHeight: 1.7, fontSize: "0.95rem", marginBottom: "16px" }}>
-            Travailler chez Tomasteed, c&apos;est intervenir sur des transactions complexes, aux côtés d&apos;une équipe sénior entièrement dédiée à chaque mandat. Nos collaborateurs bénéficient d&apos;une exposition directe aux clients, aux marchés et aux prises de décision — dès les premiers mois.
+            Travailler chez Tomasteed, c&apos;est intervenir sur des transactions complexes, aux côtés d&apos;une équipe sénior entièrement dédiée à chaque mandat. Nos collaborateurs bénéficient d&apos;une exposition directe aux clients, aux marchés et aux prises de décisiondès les premiers mois.
           </p>
           <p style={{ color: "#555", lineHeight: 1.7, fontSize: "0.9rem" }}>
             Nous n&apos;offrons pas de carrière standardisée. Nous offrons un environnement exigeant, stimulant et réellement méritocratique, où la qualité du travail est reconnue et la progression rapide est possible.
@@ -74,7 +74,7 @@ export default function CarrieresPage() {
                 Chez Tomasteed, l&apos;engagement ESG est intégré dès la conception de chaque solution de financement. Nous contribuons à une finance responsable en alignant performance financière et impact positif sur le continent africain.
               </p>
               <p style={{ color: "#555", lineHeight: 1.7, fontSize: "0.9rem" }}>
-                Nos collaborateurs participent activement à des transactions à fort impact — transition énergétique, accès à l&apos;eau, développement agricole — dans un environnement qui valorise la contribution individuelle.
+                Nos collaborateurs participent activement à des transactions à fort impacttransition énergétique, accès à l&apos;eau, développement agricoledans un environnement qui valorise la contribution individuelle.
               </p>
             </div>
             <div>

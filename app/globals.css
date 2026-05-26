@@ -21,6 +21,10 @@ body {
   padding: 0;
 }
 
+p {
+  text-align: justify;
+}
+
 .btn-orange {
   background-color: var(--orange);
   color: white;

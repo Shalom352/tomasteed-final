@@ -19,7 +19,7 @@ const tabs = [
     title: "Structuration de financement",
     desc: "Nous structurons des solutions de financement complexes et sur mesure pour des projets d'infrastructure, des opérations de corporate finance et des transactions sur les marchés des capitaux africains.",
     items: [
-      { num: 1, name: "Financement de projets", desc: "Structuration de project finance pour des infrastructures majeures — énergie, eau, transport — avec une expertise reconnue sur les mécanismes de garantie disponibles en Afrique." },
+      { num: 1, name: "Financement de projets", desc: "Structuration de project finance pour des infrastructures majeuresénergie, eau, transportavec une expertise reconnue sur les mécanismes de garantie disponibles en Afrique." },
       { num: 2, name: "Syndication de dette", desc: "Organisation et coordination de syndicats bancaires pour la levée de financements importants auprès d'institutions financières locales et internationales." },
       { num: 3, name: "Instruments hybrides", desc: "Conception et structuration d'instruments financiers hybrides combinant dette et capital pour optimiser la structure de financement des clients." },
     ],

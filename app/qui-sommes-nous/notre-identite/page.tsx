@@ -51,10 +51,10 @@ export default function NotreIdentitePage() {
                 Fondée en 2025, Tomasteed est une banque d&apos;affaires indépendante spécialisée dans la structuration de financements et le conseil en investissements, régulée par la Financial Services Regulatory Authority (FSRA) de Abu Dhabi. Tomasteed est l&apos;une des rares structures africaines et à vocation internationale à être soumise aux standards de gouvernance et de conformité du plus exigeant bureau financier international.
               </p>
               <p style={{ color: "#555", lineHeight: 1.8, fontSize: "0.95rem", marginBottom: "20px" }}>
-                Tomasteed est née d&apos;une ambition précise : offrir aux acteurs publics et privés africains, l&apos;expertise d&apos;une banque d&apos;affaires indépendante, entièrement dédiée à leur développement. Notre équipe se mobilise pour construire avec chaque client — qu&apos;il s&apos;agisse d&apos;institutions financières africaines ou internationales — une maîtrise technique des financements alignée sur les objectifs de long terme de nos clients.
+                Tomasteed est née d&apos;une ambition précise : offrir aux acteurs publics et privés africains, l&apos;expertise d&apos;une banque d&apos;affaires indépendante, entièrement dédiée à leur développement. Notre équipe se mobilise pour construire avec chaque clientqu&apos;il s&apos;agisse d&apos;institutions financières africaines ou internationalesune maîtrise technique des financements alignée sur les objectifs de long terme de nos clients.
               </p>
               <p style={{ color: "#555", lineHeight: 1.8, fontSize: "0.95rem" }}>
-                Nous collaborons avec une large diversité d&apos;acteurs — banques locales et régionales, institutions de développement, fonds de private equity et family offices — afin de favoriser la circulation des capitaux, de lever des portefeuilles d&apos;acteurs économiques africains de premier plan.
+                Nous collaborons avec une large diversité d&apos;acteursbanques locales et régionales, institutions de développement, fonds de private equity et family officesafin de favoriser la circulation des capitaux, de lever des portefeuilles d&apos;acteurs économiques africains de premier plan.
               </p>
             </div>
             <div>
