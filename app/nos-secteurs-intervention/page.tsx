@@ -10,17 +10,9 @@ const sectors = [
   { title: "Énergie Renouvelable", desc: "Nous mobilisons des capitaux pour la transition énergétique africaine — solaire, éolien, hydraulique — afin de développer des infrastructures à impact positif et durables." },
 ];
 
-function ImagePlaceholderIcon() {
-  return (
-    <div className="image-placeholder" style={{ height: "160px" }}>
-      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#AAAAAA" strokeWidth="1.5">
-        <rect x="3" y="3" width="18" height="18" rx="2"/>
-        <circle cx="8.5" cy="8.5" r="1.5" fill="#AAAAAA"/>
-        <path d="M21 15l-5-5L5 21"/>
-      </svg>
-    </div>
-  );
-}
+const sectorImages: Record<string, string> = {
+  "Santé": "/images/secteurs-sante.jpg",
+};
 
 export default function NosSecteurPage() {
   return (
@@ -51,7 +43,11 @@ export default function NosSecteurPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px" }}>
             {sectors.map((s, i) => (
               <div key={i} className="sector-card" style={{ background: "#F9F9F9" }}>
-                <ImagePlaceholderIcon />
+                {sectorImages[s.title] ? (
+                  <img src={sectorImages[s.title]} alt={s.title} style={{ width: "100%", height: "160px", objectFit: "cover", display: "block" }} />
+                ) : (
+                  <div style={{ height: "160px", background: "#E0E0E0" }} />
+                )}
                 <div style={{ padding: "20px" }}>
                   <h3 style={{ fontWeight: 800, marginBottom: "10px", fontSize: "0.9rem" }}>{s.title}</h3>
                   <p style={{ color: "#666", fontSize: "0.8rem", lineHeight: 1.6, margin: 0 }}>{s.desc}</p>

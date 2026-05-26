@@ -82,14 +82,11 @@ export default function CarrieresPage() {
               </p>
             </div>
             <div>
-              <div className="image-placeholder" style={{ height: "260px", borderRadius: "8px", flexDirection: "column", gap: "8px" }}>
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#AAAAAA" strokeWidth="1.5">
-                  <rect x="3" y="3" width="18" height="18" rx="2"/>
-                  <circle cx="8.5" cy="8.5" r="1.5" fill="#AAAAAA"/>
-                  <path d="M21 15l-5-5L5 21"/>
-                </svg>
-                <span style={{ color: "#AAAAAA", fontSize: "0.75rem" }}>Photo</span>
-              </div>
+              <img
+                src="/images/carrieres-hero.png"
+                alt="Rejoindre Tomasteed"
+                style={{ width: "100%", height: "280px", objectFit: "cover", borderRadius: "8px", display: "block" }}
+              />
             </div>
           </div>
         </div>

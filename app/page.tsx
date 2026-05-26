@@ -186,7 +186,11 @@ export default function HomePage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px", marginBottom: "32px" }}>
             {sectors.map((s, i) => (
               <div key={i} className="sector-card" style={{ background: "#F9F9F9" }}>
-                <div className="image-placeholder" style={{ height: "150px" }}><ImagePlaceholderIcon /></div>
+                {s.title === "Santé" ? (
+                  <img src="/images/accueil-sante.jpg" alt="Santé" style={{ width: "100%", height: "150px", objectFit: "cover", display: "block" }} />
+                ) : (
+                  <div style={{ height: "150px", background: "#E0E0E0" }} />
+                )}
                 <div style={{ padding: "16px" }}>
                   <h3 style={{ fontWeight: 800, marginBottom: "6px", fontSize: "0.9rem" }}>{s.title}</h3>
                   <p style={{ color: "#666", fontSize: "0.8rem", lineHeight: 1.5, margin: 0 }}>{s.desc}</p>

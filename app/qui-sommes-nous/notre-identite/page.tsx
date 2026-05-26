@@ -28,10 +28,17 @@ export default function NotreIdentitePage() {
         </div>
       </div>
 
-      {/* Hero */}
-      <section className="page-hero">
-        <div className="container">
-          <h1 className="section-title">Notre identité</h1>
+      {/* Hero avec fond photo */}
+      <section style={{
+        backgroundImage: "url('/images/identite-fond.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: "80px 0",
+        position: "relative",
+      }}>
+        <div style={{ position: "absolute", inset: 0, background: "rgba(46,45,44,0.55)" }} />
+        <div className="container" style={{ position: "relative" }}>
+          <h1 style={{ fontSize: "2.5rem", fontWeight: 800, color: "white", margin: 0 }}>Notre identité</h1>
         </div>
       </section>
 
@@ -50,17 +57,25 @@ export default function NotreIdentitePage() {
         </div>
       </section>
 
-      {/* Nos équipes */}
+      {/* Nos bureaux */}
       <section style={{ background: "#F5F5F5", padding: "60px 0" }}>
         <div className="container">
-          <h2 style={{ fontSize: "1.3rem", fontWeight: 700, marginBottom: "32px" }}>Nos équipes</h2>
+          <h2 style={{ fontSize: "1.3rem", fontWeight: 700, marginBottom: "32px" }}>Nos présences</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "16px" }}>
             {offices.map((o, i) => (
-              <div key={i} style={{ background: "white", border: "1px solid #E5E5E5", borderRadius: "8px", padding: "24px", textAlign: "center" }}>
-                <div style={{ fontSize: "2rem", marginBottom: "8px" }}>{o.flag}</div>
-                <div style={{ fontWeight: 700, fontSize: "0.85rem", color: "#888", marginBottom: "4px" }}>{o.country}</div>
-                <div style={{ fontWeight: 700, fontSize: "1.1rem", marginBottom: "8px" }}>{o.city}</div>
-                <p style={{ fontSize: "0.8rem", color: "#666", lineHeight: 1.4 }}>{o.role}</p>
+              <div key={i} style={{ background: "white", border: "1px solid #E5E5E5", borderRadius: "8px", overflow: "hidden" }}>
+                {o.city === "Abidjan" ? (
+                  <img src="/images/identite-abidjan.jpg" alt="Abidjan" style={{ width: "100%", height: "140px", objectFit: "cover", display: "block" }} />
+                ) : o.city === "Dakar" ? (
+                  <img src="/images/identite-dakar.jpg" alt="Dakar" style={{ width: "100%", height: "140px", objectFit: "cover", display: "block" }} />
+                ) : (
+                  <div style={{ height: "140px", background: "#E8E8E8" }} />
+                )}
+                <div style={{ padding: "16px" }}>
+                  <div style={{ fontWeight: 700, fontSize: "0.8rem", color: "#888", marginBottom: "4px" }}>{o.country} {o.flag}</div>
+                  <div style={{ fontWeight: 700, fontSize: "1rem", marginBottom: "6px" }}>{o.city}</div>
+                  <p style={{ fontSize: "0.78rem", color: "#666", lineHeight: 1.4, margin: 0 }}>{o.role}</p>
+                </div>
               </div>
             ))}
           </div>

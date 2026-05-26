@@ -197,9 +197,10 @@ body {
 
 .logo-text {
   font-size: 1.4rem;
-  font-weight: 900;
+  font-weight: 800;
   color: var(--brand-dark);
   letter-spacing: -0.5px;
   text-decoration: none;
+  font-family: var(--font-logo), 'Hiragino Kaku Gothic Pro', 'Hiragino Sans', 'Yu Gothic', Arial, sans-serif;
 }
-.logo-text::after { content: "."; color: var(--orange); }
+.logo-text::after { content: "."; color: var(--brand-dark); }
