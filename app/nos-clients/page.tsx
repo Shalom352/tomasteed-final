@@ -30,10 +30,17 @@ export default function NosClientsPage() {
 
   return (
     <div>
-      {/* Hero */}
-      <section className="page-hero">
-        <div className="container">
-          <h1 className="section-title">Nos clients</h1>
+      {/* Hero avec fond photo */}
+      <section style={{
+        backgroundImage: "url('/images/logos-clients-grid.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: "80px 0",
+        position: "relative",
+      }}>
+        <div style={{ position: "absolute", inset: 0, background: "rgba(46,45,44,0.65)" }} />
+        <div className="container" style={{ position: "relative" }}>
+          <h1 style={{ fontSize: "2.5rem", fontWeight: 800, color: "white", margin: 0 }}>Nos clients</h1>
         </div>
       </section>
 
@@ -96,12 +103,30 @@ export default function NosClientsPage() {
           <p style={{ color: "#666", marginBottom: "40px", fontSize: "0.9rem" }}>
             Nous avons l&apos;honneur d&apos;accompagner une large portefeuille de partenaires institutionnels, financiers et privés qui nous témoignent leur confiance au quotidien.
           </p>
-          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-            {[1, 2, 3, 4, 5, 6].map(i => (
-              <div key={i} style={{ width: "130px", height: "65px", background: "white", borderRadius: "6px", border: "1px solid #E5E5E5", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <span style={{ color: "#AAAAAA", fontSize: "0.75rem", fontWeight: 600 }}>Logo</span>
-              </div>
-            ))}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))", gap: "16px", alignItems: "center" }}>
+            {[
+              "BOAD", "Oryx Energies", "Cargill", "Orange CI", "ATIDI",
+              "BADEA", "NASLI", "Porteo Group", "YÉRÉ Group", "Agri Green"
+            ].map((name, i) => {
+              const fileMap: Record<string, string> = {
+                "BOAD": "boad.svg",
+                "Oryx Energies": "oryx-energies.svg",
+                "Cargill": "cargill.svg",
+                "Orange CI": "orange-ci.svg",
+                "ATIDI": "atidi.svg",
+                "BADEA": "badea.svg",
+                "NASLI": "nasli.svg",
+                "Porteo Group": "porteo-group.svg",
+                "YÉRÉ Group": "yere-group.svg",
+                "Agri Green": "agri-green.svg",
+              };
+              const fileName = fileMap[name] || "boad.svg";
+              return (
+                <div key={i} style={{ height: "60px", background: "white", borderRadius: "6px", border: "1px solid #E5E5E5", display: "flex", alignItems: "center", justifyContent: "center", padding: "10px", transition: "all 0.3s ease", boxShadow: "0 2px 4px rgba(0,0,0,0.02)" }}>
+                  <img src={`/images/logos/${fileName}`} alt={name} style={{ maxHeight: "100%", maxWidth: "100%", objectFit: "contain", filter: "grayscale(100%) opacity(0.8)", transition: "all 0.3s ease" }} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

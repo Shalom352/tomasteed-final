@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <!-- NASLI Logo (Typographic Corporate Wordmark) -->
+  <g transform="translate(10, 5)">
+    <!-- Elegant Geometric Emblem -->
+    <path d="M12 12 L38 12 L38 22 L25 35 L12 22 Z" fill="#2E2D2C" />
+    <path d="M25 15 L35 25 L25 35 L15 25 Z" fill="#C5A059" />
+    <circle cx="25" cy="25" r="3" fill="#FFFFFF" />
+
+    <!-- Text -->
+    <text x="52" y="34" font-family="'Times New Roman', Times, serif" font-weight="900" font-style="italic" font-size="28" fill="#2E2D2C" letter-spacing="1.5">NASLI</text>
+    <text x="54" y="47" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="700" font-size="8.5" fill="#C5A059" letter-spacing="3.5">HOLDING GROUP</text>
+  </g>
+</svg>

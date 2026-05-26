@@ -43,10 +43,17 @@ export default function NotreEquipePage() {
         </div>
       </div>
 
-      {/* Hero */}
-      <section className="page-hero">
-        <div className="container">
-          <h1 className="section-title">Notre équipe</h1>
+      {/* Hero avec fond photo */}
+      <section style={{
+        backgroundImage: "url('/images/equipe-hero.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: "80px 0",
+        position: "relative",
+      }}>
+        <div style={{ position: "absolute", inset: 0, background: "rgba(46,45,44,0.65)" }} />
+        <div className="container" style={{ position: "relative" }}>
+          <h1 style={{ fontSize: "2.5rem", fontWeight: 800, color: "white", margin: 0 }}>Notre équipe</h1>
         </div>
       </section>
 

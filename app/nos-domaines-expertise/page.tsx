@@ -54,10 +54,17 @@ export default function NosDomainesExpertisePage() {
 
   return (
     <div>
-      {/* Hero */}
-      <section className="page-hero">
-        <div className="container">
-          <h1 className="section-title">Nos domaines d&apos;expertise</h1>
+      {/* Hero avec fond photo */}
+      <section style={{
+        backgroundImage: "url('/images/expertise-conseil.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: "80px 0",
+        position: "relative",
+      }}>
+        <div style={{ position: "absolute", inset: 0, background: "rgba(46,45,44,0.65)" }} />
+        <div className="container" style={{ position: "relative" }}>
+          <h1 style={{ fontSize: "2.5rem", fontWeight: 800, color: "white", margin: 0 }}>Nos domaines d&apos;expertise</h1>
         </div>
       </section>
 
@@ -110,14 +117,16 @@ export default function NosDomainesExpertisePage() {
               </div>
             </div>
             <div>
-              <div className="image-placeholder" style={{ height: "320px", borderRadius: "8px", flexDirection: "column", gap: "12px" }}>
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#AAAAAA" strokeWidth="1.5">
-                  <rect x="3" y="3" width="18" height="18" rx="2"/>
-                  <circle cx="8.5" cy="8.5" r="1.5" fill="#AAAAAA"/>
-                  <path d="M21 15l-5-5L5 21"/>
-                </svg>
-                <span style={{ color: "#AAAAAA", fontSize: "0.8rem" }}>Visuel du slider affiché dynamiquement en fonction du service présenté.</span>
-              </div>
+              <img
+                src={
+                  activeTab === "conseil" ? "/images/expertise-conseil.png" :
+                  activeTab === "structuration" ? "/images/expertise-structuration.png" :
+                  activeTab === "fusions" ? "/images/expertise-fusions.png" :
+                  "/images/expertise-levee.png"
+                }
+                alt={current.label}
+                style={{ width: "100%", height: "320px", objectFit: "cover", borderRadius: "8px", display: "block", boxShadow: "0 4px 20px rgba(0,0,0,0.15)" }}
+              />
             </div>
           </div>
         </div>

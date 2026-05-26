@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <!-- BADEA Logo -->
+  <g transform="translate(10, 5)">
+    <!-- Globe/Africa Emblem -->
+    <circle cx="25" cy="25" r="22" fill="#1A4F8B" />
+    <circle cx="25" cy="25" r="19" fill="none" stroke="#D4AF37" stroke-width="1.5" />
+    <!-- Africa map silhouette in gold -->
+    <path d="M22 13 C26 13, 29 16, 31 18 C33 20, 34 23, 31 27 C29 29, 28 32, 27 34 C26 36, 24 38, 23 38 C22 36, 21 34, 21 32 C20 30, 19 28, 17 27 C15 26, 14 24, 15 22 C16 20, 15 18, 17 16 C19 14, 21 13, 22 13 Z" fill="#D4AF37" />
+
+    <!-- Text -->
+    <text x="60" y="27" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="900" font-size="22" fill="#1A4F8B" letter-spacing="1">BADEA</text>
+    <text x="60" y="40" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600" font-size="8.5" fill="#D4AF37" letter-spacing="0.5">BANQUE ARABE POUR LE DÉVELOPPEMENT</text>
+    <text x="60" y="49" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600" font-size="8.5" fill="#D4AF37" letter-spacing="0.5">ÉCONOMIQUE EN AFRIQUE</text>
+  </g>
+</svg>

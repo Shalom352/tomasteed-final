@@ -28,10 +28,17 @@ function AvatarIcon() {
 export default function NousContacterPage() {
   return (
     <div>
-      {/* Hero */}
-      <section className="page-hero">
-        <div className="container">
-          <h1 className="section-title">Contacts</h1>
+      {/* Hero avec fond photo */}
+      <section style={{
+        backgroundImage: "url('/images/contact-bureau.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: "80px 0",
+        position: "relative",
+      }}>
+        <div style={{ position: "absolute", inset: 0, background: "rgba(46,45,44,0.65)" }} />
+        <div className="container" style={{ position: "relative" }}>
+          <h1 style={{ fontSize: "2.5rem", fontWeight: 800, color: "white", margin: 0 }}>Contacts</h1>
         </div>
       </section>
 
@@ -51,9 +58,11 @@ export default function NousContacterPage() {
               </div>
             </div>
             <div>
-              <div className="image-placeholder" style={{ height: "260px", borderRadius: "8px", flexDirection: "column", gap: "8px", background: "#2E2D2C" }}>
-                <span style={{ color: "#AAAAAA", fontSize: "0.75rem" }}>Photo</span>
-              </div>
+              <img
+                src="/images/contact-bureau.png"
+                alt="Bureau Tomasteed"
+                style={{ width: "100%", height: "260px", objectFit: "cover", borderRadius: "8px", display: "block", boxShadow: "0 4px 20px rgba(0,0,0,0.15)" }}
+              />
             </div>
           </div>
         </div>

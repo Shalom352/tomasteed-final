@@ -50,15 +50,22 @@ function ImagePlaceholderIcon() {
 export default function HomePage() {
   return (
     <div>
-      {/* Hero */}
-      <section style={{ background: "#E0E0E0", padding: "80px 0" }}>
-        <div className="container">
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px", alignItems: "center" }}>
+      {/* Hero avec fond photo */}
+      <section style={{
+        backgroundImage: "url('/images/hero-accueil.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        padding: "100px 0",
+        position: "relative",
+      }}>
+        <div style={{ position: "absolute", inset: 0, background: "rgba(46,45,44,0.7)" }} />
+        <div className="container" style={{ position: "relative", zIndex: 1 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: "60px", alignItems: "center" }}>
             <div>
-              <h1 style={{ fontSize: "2.7rem", fontWeight: 900, color: "#DC4920", lineHeight: 1.15, marginBottom: "20px", letterSpacing: "-0.5px" }}>
+              <h1 style={{ fontSize: "3rem", fontWeight: 900, color: "white", lineHeight: 1.15, marginBottom: "20px", letterSpacing: "-0.5px" }}>
                 Votre partenaire pour les opérations qui façonnent l&apos;Afrique.
               </h1>
-              <p style={{ fontSize: "1.1rem", color: "#DC4920", marginBottom: "32px", lineHeight: 1.6, fontWeight: 600 }}>
+              <p style={{ fontSize: "1.15rem", color: "rgba(255, 255, 255, 0.9)", marginBottom: "32px", lineHeight: 1.6, fontWeight: 500 }}>
                 Conseil stratégique et structuration de financements sur les marchés émergents.
               </p>
               <Link href="/nos-domaines-expertise" className="btn-orange">
@@ -66,17 +73,17 @@ export default function HomePage() {
               </Link>
             </div>
             <div>
-              <div style={{ border: "1px solid #AAAAAA", borderRadius: "6px", padding: "10px 18px", display: "inline-block", marginBottom: "28px", background: "white", fontSize: "0.82rem", color: "#555", fontWeight: 600 }}>
+              <div style={{ border: "1px solid rgba(255,255,255,0.2)", borderRadius: "6px", padding: "10px 18px", display: "inline-block", marginBottom: "28px", background: "rgba(255,255,255,0.1)", backdropFilter: "blur(8px)", fontSize: "0.82rem", color: "white", fontWeight: 600 }}>
                 Alternative Credit Advisor – Régulé FSRA · ADGM
               </div>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "14px" }}>
-                <div style={{ background: "white", border: "1px solid #DDDDDD", borderRadius: "6px", padding: "18px" }}>
-                  <div style={{ fontWeight: 800, marginBottom: "6px", fontSize: "0.9rem" }}>Partenaire de long terme</div>
-                  <p style={{ fontSize: "0.78rem", color: "#666", lineHeight: 1.5, margin: 0 }}>Nous intervenons sur des transactions complexes, mobilisés autour d&apos;un seul objectif : des résultats mesurables pour vos clients.</p>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px" }}>
+                <div style={{ background: "rgba(255, 255, 255, 0.08)", backdropFilter: "blur(12px)", border: "1px solid rgba(255, 255, 255, 0.15)", borderRadius: "8px", padding: "20px" }}>
+                  <div style={{ fontWeight: 800, marginBottom: "6px", fontSize: "0.95rem", color: "#DC4920" }}>Partenaire de long terme</div>
+                  <p style={{ fontSize: "0.82rem", color: "rgba(255, 255, 255, 0.8)", lineHeight: 1.5, margin: 0 }}>Nous intervenons sur des transactions complexes, mobilisés autour d&apos;un seul objectif : des résultats mesurables pour vos clients.</p>
                 </div>
-                <div style={{ background: "white", border: "1px solid #DDDDDD", borderRadius: "6px", padding: "18px" }}>
-                  <div style={{ fontWeight: 800, marginBottom: "6px", fontSize: "0.9rem" }}>Ancrage Africain</div>
-                  <p style={{ fontSize: "0.78rem", color: "#666", lineHeight: 1.5, margin: 0 }}>Notre présence multisites en Afrique et à l&apos;international nous permet de comprendre les enjeux locaux et d&apos;y répondre avec précision.</p>
+                <div style={{ background: "rgba(255, 255, 255, 0.08)", backdropFilter: "blur(12px)", border: "1px solid rgba(255, 255, 255, 0.15)", borderRadius: "8px", padding: "20px" }}>
+                  <div style={{ fontWeight: 800, marginBottom: "6px", fontSize: "0.95rem", color: "#DC4920" }}>Ancrage Africain</div>
+                  <p style={{ fontSize: "0.82rem", color: "rgba(255, 255, 255, 0.8)", lineHeight: 1.5, margin: 0 }}>Notre présence multisites en Afrique et à l&apos;international nous permet de comprendre les enjeux locaux et d&apos;y répondre avec précision.</p>
                 </div>
               </div>
             </div>
@@ -218,12 +225,27 @@ export default function HomePage() {
           <p style={{ color: "#666", marginBottom: "36px", fontSize: "0.9rem" }}>
             Nous avons l&apos;honneur d&apos;accompagner une large portefeuille de partenaires institutionnels, financiers et privés qui nous témoignent leur confiance au quotidien.
           </p>
-          <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
-            {clientLogos.map((name, i) => (
-              <div key={i} style={{ minWidth: "110px", height: "56px", background: "white", borderRadius: "6px", border: "1px solid #E5E5E5", display: "flex", alignItems: "center", justifyContent: "center", padding: "0 12px" }}>
-                <span style={{ color: "#666", fontSize: "0.75rem", fontWeight: 700, textAlign: "center" }}>{name}</span>
-              </div>
-            ))}
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))", gap: "16px", alignItems: "center" }}>
+            {clientLogos.map((name, i) => {
+              const fileMap: Record<string, string> = {
+                "BOAD": "boad.svg",
+                "Oryx Energies": "oryx-energies.svg",
+                "Cargill": "cargill.svg",
+                "Orange CI": "orange-ci.svg",
+                "ATIDI": "atidi.svg",
+                "BADEA": "badea.svg",
+                "NASLI": "nasli.svg",
+                "Porteo Group": "porteo-group.svg",
+                "YÉRÉ Group": "yere-group.svg",
+                "Agri Green": "agri-green.svg",
+              };
+              const fileName = fileMap[name] || "boad.svg";
+              return (
+                <div key={i} style={{ height: "60px", background: "white", borderRadius: "6px", border: "1px solid #E5E5E5", display: "flex", alignItems: "center", justifyContent: "center", padding: "10px", transition: "all 0.3s ease", boxShadow: "0 2px 4px rgba(0,0,0,0.02)" }}>
+                  <img src={`/images/logos/${fileName}`} alt={name} style={{ maxHeight: "100%", maxWidth: "100%", objectFit: "contain", filter: "grayscale(100%) opacity(0.8)", transition: "all 0.3s ease" }} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

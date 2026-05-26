@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <!-- YERE Group Logo (Geometric Abstract Emblem) -->
+  <g transform="translate(10, 5)">
+    <!-- Polygon/Cube Emblem -->
+    <path d="M25 8 L42 18 L42 38 L25 48 L8 38 L8 18 Z" fill="#111111" />
+    <path d="M25 8 L42 18 L25 28 L8 18 Z" fill="#DC4920" />
+    <path d="M25 28 L42 38 L25 48 Z" fill="#666666" />
+    <path d="M25 28 L8 38 L25 48 Z" fill="#333333" />
+
+    <!-- Text -->
+    <text x="52" y="32" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="900" font-size="22" fill="#111111" letter-spacing="1">YÉRÉ</text>
+    <text x="112" y="32" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="400" font-size="22" fill="#DC4920" letter-spacing="1">GROUP</text>
+    <text x="52" y="46" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600" font-size="9" fill="#666666" letter-spacing="2.5">ADVISORY &amp; INVESTMENT</text>
+  </g>
+</svg>

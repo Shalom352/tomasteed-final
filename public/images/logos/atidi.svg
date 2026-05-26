@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <!-- ATIDI Logo -->
+  <g transform="translate(10, 5)">
+    <!-- Abstract Emblem (Overlapping geometric rings) -->
+    <path d="M10 32 C10 18, 22 10, 32 10 C42 10, 48 18, 48 24 L38 24 C38 20, 34 16, 30 16 C22 16, 18 24, 18 32 C18 40, 24 44, 32 44 C38 44, 40 40, 40 38 L30 38 L30 30 L48 30 L48 48 C40 50, 28 50, 18 46 C12 42, 10 38, 10 32 Z" fill="#0E3D77" />
+    <path d="M26 22 A 6 6 0 1 0 38 22 A 6 6 0 1 0 26 22 Z" fill="#009F8C" />
+    
+    <!-- Text -->
+    <text x="60" y="34" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="900" font-size="28" fill="#0E3D77" letter-spacing="0.5">ATIDI</text>
+    <text x="60" y="47" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="600" font-size="7.5" fill="#009F8C" letter-spacing="1">AFRICAN TRADE &amp; INVESTMENT DEVELOPMENT INSURANCE</text>
+  </g>
+</svg>
